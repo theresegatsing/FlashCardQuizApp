@@ -51,3 +51,6 @@ You currently have 0 flashcards.
 3. Start quiz
 4. Save & exit
 Choose an option:
+
+## 🙋‍♀️ Author
+Therese Elvira Mombou Gatsing
