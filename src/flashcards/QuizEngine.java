@@ -11,5 +11,11 @@ import java.util.Scanner;
  * @author Therese Elvira Mombou Gatsing
  */
 public class QuizEngine {
+	
+	private final List<Flashcard> deck;
+
+    public QuizEngine(List<Flashcard> deck) {
+        this.deck = deck;
+    }
 
 }
