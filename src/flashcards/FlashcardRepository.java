@@ -53,5 +53,19 @@ public class FlashcardRepository {
 
         return cards;
     }
+    
+    /**
+     * Saves all flashcards to the file, overwriting previous content.
+     */
+    public void save(List<Flashcard> cards) {
+        try (BufferedWriter writer = Files.newBufferedWriter(filePath)) {
+            for (Flashcard card : cards) {
+                writer.write(card.getQuestion() + "|" + card.getAnswer());
+                writer.newLine();
+            }
+        } catch (IOException e) {
+            System.err.println("Error saving flashcards file: " + e.getMessage());
+        }
+    }
 
 }
