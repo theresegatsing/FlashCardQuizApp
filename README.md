@@ -41,3 +41,13 @@ flashcards.txt                 # Auto-created data file
 2. Navigate to: src/flashcards/FlashcardApp.java
 3. Right-click → Run As → Java Application
 4. Use the console menu to interact with the app
+
+
+## 🖥️ Console Preview
+=== Flashcard Quiz App ===
+You currently have 0 flashcards.
+1. Add flashcard
+2. List flashcards
+3. Start quiz
+4. Save & exit
+Choose an option:
