@@ -65,5 +65,23 @@ public class FlashcardApp {
     }
 
     
+    private static void addFlashcard(Scanner scanner, List<Flashcard> deck) {
+        System.out.println("\n--- Add Flashcard ---");
+        System.out.print("Enter question: ");
+        String question = scanner.nextLine().trim();
+
+        System.out.print("Enter answer: ");
+        String answer = scanner.nextLine().trim();
+
+        if (question.isEmpty() || answer.isEmpty()) {
+            System.out.println("Question and answer cannot be empty.");
+            return;
+        }
+
+        Flashcard card = new Flashcard(question, answer);
+        deck.add(card);
+        System.out.println("Flashcard added!");
+    }
+    
 
 }
