@@ -24,4 +24,34 @@ public class FlashcardRepository {
     public FlashcardRepository(String fileName) {
         this.filePath = Path.of(fileName);
     }
+    
+    /**
+     * Loads all flashcards from the file.
+     * If the file does not exist, returns an empty list.
+     */
+    public List<Flashcard> load() {
+        List<Flashcard> cards = new ArrayList<>();
+
+        if (!Files.exists(filePath)) {
+            return cards;
+        }
+
+        try {
+            List<String> lines = Files.readAllLines(filePath);
+            for (String line : lines) {
+                // Format: question|answer
+                String[] parts = line.split("\\|", 2);
+                if (parts.length == 2) {
+                    String question = parts[0];
+                    String answer = parts[1];
+                    cards.add(new Flashcard(question, answer));
+                }
+            }
+        } catch (IOException e) {
+            System.err.println("Error reading flashcards file: " + e.getMessage());
+        }
+
+        return cards;
+    }
+
 }
