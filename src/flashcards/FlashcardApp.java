@@ -12,6 +12,8 @@ import java.util.Scanner;
  * - List all flashcards
  * - Quiz mode
  * - Save & exit
+ * 
+ * @author Therese Elvira Mombou Gatsing
  */
 public class FlashcardApp {
 
