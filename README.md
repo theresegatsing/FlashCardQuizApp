@@ -25,3 +25,13 @@ This project demonstrates:
 
 ## 📁 Project Structure
 
+
+```text
+flashcards/
+│
+├── Flashcard.java             # Model class for a single flashcard
+├── FlashcardRepository.java   # Handles file saving/loading
+├── QuizEngine.java            # Quiz logic and scoring
+└── FlashcardApp.java          # Console UI (main program)
+
+flashcards.txt                 # Auto-created data file
