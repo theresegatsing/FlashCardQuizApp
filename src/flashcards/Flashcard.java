@@ -15,4 +15,11 @@ public class Flashcard {
         this.answer = answer;
     }
 
+    public String getQuestion() {
+        return question;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
 }
