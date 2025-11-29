@@ -18,4 +18,10 @@ import java.util.List;
 
 public class FlashcardRepository {
 
+
+    private final Path filePath;
+
+    public FlashcardRepository(String fileName) {
+        this.filePath = Path.of(fileName);
+    }
 }
