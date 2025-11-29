@@ -34,4 +34,10 @@ flashcards/
 ├── QuizEngine.java            # Quiz logic and scoring
 └── FlashcardApp.java          # Console UI (main program)
 
-flashcards.txt                 # Auto-created data file
+flashcards.txt                 # Auto-created data file 
+```
+## 🚀 How to Run
+1. Open the project in Eclipse
+2. Navigate to: src/flashcards/FlashcardApp.java
+3. Right-click → Run As → Java Application
+4. Use the console menu to interact with the app
