@@ -83,5 +83,19 @@ public class FlashcardApp {
         System.out.println("Flashcard added!");
     }
     
+    
+    private static void listFlashcards(List<Flashcard> deck) {
+        System.out.println("\n--- All Flashcards ---");
+        if (deck.isEmpty()) {
+            System.out.println("No flashcards.");
+            return;
+        }
+
+        int i = 1;
+        for (Flashcard card : deck) {
+            System.out.println(i + ". " + card);
+            i++;
+        }
+    }
 
 }
