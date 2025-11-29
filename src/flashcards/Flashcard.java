@@ -22,4 +22,9 @@ public class Flashcard {
     public String getAnswer() {
         return answer;
     }
+    
+    @Override
+    public String toString() {
+        return "Q: " + question + " | A: " + answer;
+    }
 }
