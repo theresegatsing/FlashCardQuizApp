@@ -54,5 +54,16 @@ public class FlashcardApp {
         }
     }
 
+    
+    private static void printMenu(int count) {
+        System.out.println("\n=== Flashcard Quiz App ===");
+        System.out.println("You currently have " + count + " flashcards.");
+        System.out.println("1. Add flashcard");
+        System.out.println("2. List flashcards");
+        System.out.println("3. Start quiz");
+        System.out.println("4. Save & exit");
+    }
+
+    
 
 }
